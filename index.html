@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="all">
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+
+        <div class="calculater">
+            <div class="input-number">
+                <input type="number" placeholder="0" disabled>
+                <div class="buttons">
+                    <button class="sete">7</button>
+                    <button class="oito">8</button>
+                    <button class="nove">9</button>
+                    <button onclick="multiplicacao()" class="multiplicar">*</button>
+                    <button class="quatro">4</button>
+                    <button class="cinco">5</button>
+                    <button class="seis">6</button>
+                    <button onclick="deleteOn()" class="delete">DEL</button>
+                    <button class="dois">2</button>
+                    <button class="tres">3</button>
+                    <button class="um">1</button>
+                    <button class="ponto">.</button>
+                    <button class="zero">0</button>
+                    <button onclick="soma()" class="adicao">+</button>
+                    <button onclick="subtracao()" class="subtracao">-</button>
+                    <button onclick="divisao()" class="divisao">÷</button>
+                    <button onclick="calcular()" class="igual">=</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./script.js"> </script>
+
+</html>
