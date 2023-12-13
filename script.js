@@ -3,7 +3,7 @@
 const input = document.querySelector('input')
 let multiplicar = document.querySelector('.multiplicar')
 let del = document.querySelector('.delete')
-let ponto = document.querySelector('.ponto')
+let raiz = document.querySelector('.raiz')
 let somar = document.querySelector('.adicao')
 let subtrair = document.querySelector('.subtracao')
 let dividir = document.querySelector('.divisao')
@@ -67,39 +67,45 @@ zero.addEventListener('click', function () {
 ////////////////////////////////////////////
 
 //FUNÇÕES RESPONSAVEIS PELAS OPERAÇÕES
-function deleteOn() {
+del.addEventListener('click', function () {
     input.value = "";
-}
+})
 
-function divisao() {
+raiz.addEventListener('click', function calcularRaizQuadrada() {
+    const valor = parseFloat(input.value);
+    const resultado = Math.sqrt(valor);
+    input.value = resultado;
+})
+
+dividir.addEventListener('click', function () {
     let valor1 = parseFloat(input.value);
     input.value = ''; // Limpa o input para receber o próximo número
     input.setAttribute('data-operacao', 'divisao');
     input.setAttribute('data-valor1', valor1);
-}
+})
 
-function multiplicacao() {
+multiplicar.addEventListener('click', function () {
     let valor1 = parseFloat(input.value);
     input.value = ''; // Limpa o input para receber o próximo número
     input.setAttribute('data-operacao', 'multiplicacao');
     input.setAttribute('data-valor1', valor1);
-}
+})
 
-function subtracao() {
+subtrair.addEventListener('click', function () {
     let valor1 = parseFloat(input.value);
     input.value = ''; // Limpa o input para receber o próximo número
     input.setAttribute('data-operacao', 'subtracao');
     input.setAttribute('data-valor1', valor1);
-}
+})
 
-function soma() {
+somar.addEventListener('click', function () {
     let valor1 = parseFloat(input.value);
     input.value = ''; // Limpa o input para receber o próximo número
     input.setAttribute('data-operacao', 'soma');
     input.setAttribute('data-valor1', valor1);
-}
+})
 
-function calcular() {
+resultado.addEventListener('click', function () {
     let valor1 = parseFloat(input.getAttribute('data-valor1'));
     let valor2 = parseFloat(input.value);
     let operacao = input.getAttribute('data-operacao');
@@ -124,4 +130,4 @@ function calcular() {
 
     input.value = resultado;
 }
-
+)
