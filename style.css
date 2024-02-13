@@ -201,6 +201,27 @@ button:nth-child(17):active {
     }
 }
 
+@media screen and (max-width: 1400px) {
+
+    .calculater {
+        height: 80%;
+    }
+
+    button {
+        margin: 5px;
+    }
+
+    .buttons {
+        display: grid;
+        padding-left: 15px;
+        grid-template-columns: 70px 2fr 2fr 2fr;
+    }
+
+    .buttons :last-child {
+        width: 260px;
+    }
+}
+
 @media screen and (max-width: 1200px) {
 
     .all {
