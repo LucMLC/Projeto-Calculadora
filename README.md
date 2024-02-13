@@ -2,6 +2,10 @@
 <a href="https://calculadoraonlineee.netlify.app/">Site publicado</a>
 <br>
 <h1>Calculadora Online</h1>
+<br>
+<br>
+<img src="./img-readmi/Captura de tela 2024-02-13 140033.png" alt="Imagem do projeto">
+<img src="./img-readmi/Captura de tela 2024-02-13 144410.png" alt="Imagem do projeto">
 
 <p>Esta é uma calculadora online simples e fácil de usar, desenvolvida para realizar cálculos matemáticos básicos. Esta aplicação web foi construída usando HTML, CSS e JavaScript.</p>
 
